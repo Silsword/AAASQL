@@ -4,4 +4,4 @@
 #include<iostream>
 using namespace std;
 
-void error(unsigned short error_type);
+void error(unsigned short error_type); ///< The function generates a JSON response when user errors occur

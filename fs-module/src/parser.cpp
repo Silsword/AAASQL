@@ -7,6 +7,8 @@
 
 using namespace std;
 
+//! \brief The function returns the intersection set of two source sets
+
 vector<int> _and(vector <int> a1, vector<int> a2) {
     vector<int> ans;
 
@@ -27,6 +29,8 @@ vector<int> _and(vector <int> a1, vector<int> a2) {
 
     return (ans);
 }
+
+//! \brief A function that starts the process of the program and, accordingly, performs parsing of incoming JSON requests
 
 int main() {
     ofstream file;

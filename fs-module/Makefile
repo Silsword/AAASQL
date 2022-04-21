@@ -10,9 +10,9 @@ CFLAGS := -std=c++17
 LDFLAGS := 
 LDLIBS := -ljsoncpp
 
-.PHONY: all clean
+.PHONY: all clean doc
 
-all: $(EXE)
+all: $(EXE) doc
 
 $(EXE) : $(OBJ) | $(BIN_DIR)
 	$(CC) $^ $(LDLIBS) -o $@
@@ -22,6 +22,9 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
 
 $(BIN_DIR) $(OBJ_DIR):
 	mkdir -p $@
+
+doc:
+	doxygen Doxyfile
 
 clean:
 	@$(RM) -rv $(BIN_DIR) $(OBJ_DIR)

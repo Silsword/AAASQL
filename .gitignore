@@ -2,3 +2,6 @@
 /fs-module/bin
 /fs-module/obj
 /aaasql
+/doc/fs-module/*
+/doc/intermediate-module/*
+/doc/interface-module/*

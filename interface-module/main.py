@@ -7,6 +7,13 @@ def output(data):
     table = PrettyTable()
     max_length = 0
     for i in input_json.keys():
+        for j in range(len(input_json[i])):
+            if isinstance(input_json[i][j], list):
+                string = ""
+                for k in input_json[i][j]:
+                    string += str(k)
+                    string += ", "
+                input_json[i][j] = string[0:-2]
         if len(input_json[i]) > max_length:
             max_length = len(input_json[i])
     for i in input_json.keys():

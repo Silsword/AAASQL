@@ -1,10 +1,11 @@
 #pragma once
 
-#include <cell.h>
+#include "cell.h"
 #include <vector>
 #include <string>
-#include <error.h>
-using namespace std;
+#include "error.h"
+using std::vector;
+using std::to_string;
 
 //! \brief The class is a database table
 

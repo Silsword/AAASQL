@@ -1,4 +1,4 @@
-#include <error.h>
+#include "error.h"
 
 void error(unsigned short error_type) {
     switch (error_type) {

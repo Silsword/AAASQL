@@ -3,7 +3,8 @@
 #include <iostream>
 #include <variant>
 
-using namespace std;
+using std::string;
+using std::variant;
 
  //! \brief A class representing a cell of a database table
 

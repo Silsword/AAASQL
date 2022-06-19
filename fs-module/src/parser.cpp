@@ -1,11 +1,9 @@
 #include <json/json.h>
-#include <iostream>
-#include <table.h>
-#include <error.h>
+#include "table.h"
 #include <fstream>
-#include <vector>
 
-using namespace std;
+using std::ofstream;
+using std::cin;
 
 //! \brief The function returns the intersection set of two source sets
 

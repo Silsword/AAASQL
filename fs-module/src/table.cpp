@@ -64,7 +64,7 @@ string table::save() {
             a += ",";
     }
 
-    a += "]}\n" + to_string(rows.size());
+    a += "]}\n" + to_string(rows[0].size());
 
     if (rows.size() > 1) {
         for (int j = 1; j < rows.size() - 1; j++) {
